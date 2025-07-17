@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoLiga - Офіційний сайт</title>
+    
+    <meta name="description" content="CryptoLiga - криптогра, симулятор спортивних змагань з турнірним геймплеєм і реальними криптовалютними нагородами">
+    <meta name="keywords" content="CryptoLiga, криптогра, блокчейн гра, турніри, TON, криптовалюта, NFT">
+    <meta name="author" content="CryptoLiga Team">
+    
+    <meta property="og:title" content="CryptoLiga - Майбутнє крипто-ігор">
+    <meta property="og:description" content="Симулятор спортивних змагань з криптокомандами та реальними нагородами">
+    <meta property="og:image" content="baner.png">
+    <meta property="og:url" content="https://github.com/Rosdorosh/Crypto_Liga">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CryptoLiga - Майбутнє крипто-ігор">
+    <meta name="twitter:description" content="Симулятор спортивних змагань з криптокомандами та реальними нагородами">
+    <meta name="twitter:image" content="baner.png">
+    
+    <link rel="icon" type="image/png" href="logo/btc.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <img src="background.jpg" alt="Background" class="background-image">
+        <div class="background-overlay"></div>
+    </div>
+
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="uk">UA</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <header class="game-banner">
+        <img src="baner.png" alt="CryptoLiga Banner" class="banner-image">
+        <div class="banner-controls">
+            <a href="#" class="play-btn" data-translate="play">Play</a>
+            <a href="#" class="group-btn" data-translate="group">Group</a>
+        </div>
+        <button class="menu-toggle glass-effect" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <nav class="navigation glass-effect" id="navigation">
+        <ul class="nav-list">
+            <li><a href="#news" data-translate="news">Новини</a></li>
+            <li><a href="#daily" data-translate="daily">Щоденний турнір</a></li>
+            <li><a href="#mega" data-translate="mega">Мега турнір</a></li>
+            <li><a href="#fan" data-translate="fan">Фан-сектор</a></li>
+            <li><a href="#about" data-translate="about">Про гру</a></li>
+            <li><a href="#contact" data-translate="contact">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section id="news" class="page active">
+            <div class="crypto-teams-grid">
+                <div class="teams-marquee" id="teamsMarquee">
+                </div>
+            </div>
+            
+            <div class="news-section">
+                <h2 data-translate="crypto-liga-news">Crypto Liga News</h2>
+                <div class="news-slider-container">
+                    <div class="news-slider" id="newsSlider">
+                        <div class="news-slide active" data-slide="0">
+                            <div class="news-slide-image">
+                                <img src="example/1.jpg" alt="News Image">
+                            </div>
+                            <div class="news-slide-content">
+                                <h3 data-translate="news-1-title">100x за 3 дні!</h3>
+                                <p data-translate="news-1-full-desc">Гравець який зарезервував команду FIL в MEGA Tournament отримав неймовірний приз 310 TON! Це стало можливим завдяки високому коефіцієнту команди та вдалому проходженню всіх стадій турніру. Команда FIL показала фантастичну гру, перемагаючи сильних суперників один за одним.</p>
+                                <div class="news-slide-date">
+                                    <span>15 липня 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-slide" data-slide="1">
+                            <div class="news-slide-image">
+                                <img src="example/2.jpg" alt="News Image">
+                            </div>
+                            <div class="news-slide-content">
+                                <h3 data-translate="news-2-title">Про призови</h3>
+                                <p data-translate="news-2-full-desc">За вихід в фінальну частину MEGA Tournament команди отримали по 10 TON! Це значне збільшення призового фонду порівняно з минулими турнірами. Організатори прийняли рішення підвищити винагороду для мотивації гравців та підтримки активності в грі.</p>
+                                <div class="news-slide-date">
+                                    <span>12 липня 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-slide" data-slide="2">
+                            <div class="news-slide-image">
+                                <img src="example/3.jpg" alt="News Image">
+                            </div>
+                            <div class="news-slide-content">
+                                <h3 data-translate="news-3-title">ATOM переможець Day Tournament!</h3>
+                                <p data-translate="news-3-full-desc">Вітаємо переможця щоденного Day Tournament! Гравець що зарезервував команду ATOM показав блискучу гру та заслужено здобув перемогу. Турнір проходив у напруженій боротьбі, але ATOM зміг обійти всіх конкурентів.</p>
+                                <div class="news-slide-date">
+                                    <span>10 липня 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-slide" data-slide="3">
+                            <div class="news-slide-image">
+                                <img src="example/4.jpg" alt="News Image">
+                            </div>
+                            <div class="news-slide-content">
+                                <h3 data-translate="news-4-title">Призовий фонд збільшено!</h3>
+                                <p data-translate="news-4-full-desc">Вже на зараз призовий фонд Weekend Tournament складає 60 TON! Це рекордна сума для weekend змагань. Збільшення відбулось завдяки зростанню популярності CryptoLiga та активній участі гравців у турнірах.</p>
+                                <div class="news-slide-date">
+                                    <span>8 липня 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-slide" data-slide="4">
+                            <div class="news-slide-image">
+                                <img src="example/5.jpg" alt="News Image">
+                            </div>
+                            <div class="news-slide-content">
+                                <h3 data-translate="news-5-title">Команда місяця</h3>
+                                <p data-translate="news-5-full-desc">10 денних турнірів липня позаду і вже сформувалась команда лідер! Після підрахунку всіх результатів, найстабільнішою командою місяця стала ETH, яка показала високі результати протягом всього періоду.</p>
+                                <div class="news-slide-date">
+                                    <span>5 липня 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-pagination">
+                        <span class="news-dot active" data-slide="0"></span>
+                        <span class="news-dot" data-slide="1"></span>
+                        <span class="news-dot" data-slide="2"></span>
+                        <span class="news-dot" data-slide="3"></span>
+                        <span class="news-dot" data-slide="4"></span>
+                    </div>
+                    <div class="news-navigation">
+                        <button class="news-nav-btn news-prev">‹</button>
+                        <button class="news-nav-btn news-next">›</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top-scores">
+                <img src="example/top_scores.png" alt="Top Scores" class="section-title">
+                <div class="scores-table">
+                    <div class="table-header">
+                        <span data-translate="team">TEAM</span>
+                        <span data-translate="first-places">1st places</span>
+                        <span data-translate="second-places">2nd places</span>
+                        <span data-translate="pts">PTS</span>
+                    </div>
+                    <div class="team-scores" id="teamScores">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="daily" class="page">
+            <img src="example/coming soon daily.png" alt="Coming Soon Daily" class="section-title">
+            
+            <div class="tournament-timer glass-effect">
+                <div class="timer-display">
+                    <div class="time-unit">
+                        <span class="time-value" id="dailyDays">00</span>
+                        <span class="time-label" data-translate="days">DAYS</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="dailyHours">08</span>
+                        <span class="time-label" data-translate="hours">HOURS</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="dailyMinutes">18</span>
+                        <span class="time-label" data-translate="minutes">MINUTES</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="dailySeconds">24</span>
+                        <span class="time-label" data-translate="seconds">SECONDS</span>
+                    </div>
+                </div>
+            </div>
+
+            <img src="example/results_draw.png" alt="Results Draw" class="section-title">
+            
+            <div class="draw-results glass-effect">
+                <div class="matches-scroll" id="drawMatches">
+                </div>
+            </div>
+
+            <img src="example/result.png" alt="Results" class="section-title">
+            
+            <div class="tournament-results glass-effect">
+                <div class="rounds-navigation">
+                    <button class="round-btn active" data-round="1/16">1/16</button>
+                    <button class="round-btn" data-round="1/8">1/8</button>
+                    <button class="round-btn" data-round="1/4">1/4</button>
+                    <button class="round-btn" data-round="1/2">1/2</button>
+                    <button class="round-btn" data-round="final">FINAL</button>
+                </div>
+                <div class="matches-results" id="dailyResults">
+                </div>
+            </div>
+        </section>
+
+        <section id="mega" class="page">
+            <img src="example/comming_mega.png" alt="Coming Mega" class="section-title">
+            
+            <div class="tournament-timer glass-effect">
+                <div class="timer-display">
+                    <div class="time-unit">
+                        <span class="time-value" id="megaDays">08</span>
+                        <span class="time-label" data-translate="days">DAYS</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="megaHours">08</span>
+                        <span class="time-label" data-translate="hours">HOURS</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="megaMinutes">18</span>
+                        <span class="time-label" data-translate="minutes">MINUTES</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="megaSeconds">24</span>
+                        <span class="time-label" data-translate="seconds">SECONDS</span>
+                    </div>
+                </div>
+            </div>
+
+            <img src="example/result.png" alt="Results" class="section-title">
+            
+            <div class="mega-results glass-effect">
+                <div class="groups-navigation">
+                    <button class="group-btn active" data-group="A">GROUP A</button>
+                    <button class="group-btn" data-group="B">GROUP B</button>
+                    <button class="group-btn" data-group="C">GROUP C</button>
+                    <button class="group-btn" data-group="D">GROUP D</button>
+                    <button class="group-btn" data-group="playoffs">PLAYOFFS</button>
+                </div>
+                <div class="group-results" id="megaResults">
+                </div>
+            </div>
+        </section>
+
+        <section id="fan" class="page">
+            <img src="example/comming.png" alt="Coming Soon" class="section-title">
+            
+            <div class="fan-content glass-effect">
+                <h2 data-translate="nft-collection">NFT Collection</h2>
+                <p data-translate="nft-description">Скоро тут будуть доступні унікальні NFT пов'язані з CryptoLiga!</p>
+            </div>
+        </section>
+
+        <section id="about" class="page">
+            <img src="example/game_instructions.png" alt="Game Instructions" class="section-title">
+            
+            <div class="instructions-slider glass-effect">
+                <div class="slider-container">
+                    <div class="slide active">
+                        <img src="instructions/1.png" alt="Instruction 1">
+                        <div class="slide-content">
+                            <h3 data-translate="instruction-1-title">Реєстрація</h3>
+                            <p data-translate="instruction-1-desc">Натисніть кнопку "Register" і прив'яжіть свій Ton гаманець використовуючи TON Connect.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="instructions/2.jpg" alt="Instruction 2">
+                        <div class="slide-content">
+                            <h3 data-translate="instruction-2-title">Вибір команди</h3>
+                            <p data-translate="instruction-2-desc">Оберіть одну з доступних криптокоманд для участі в турнірі.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="instructions/3.jpg" alt="Instruction 3">
+                        <div class="slide-content">
+                            <h3 data-translate="instruction-3-title">Щоденні турніри</h3>
+                            <p data-translate="instruction-3-desc">Беріть участь у щоденних турнірах що починаються о 18:00.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="instructions/4.jpg" alt="Instruction 4">
+                        <div class="slide-content">
+                            <h3 data-translate="instruction-4-title">Мега турніри</h3>
+                            <p data-translate="instruction-4-desc">Щомісячні мега турніри з більшими призовими фондами.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="instructions/5.jpg" alt="Instruction 5">
+                        <div class="slide-content">
+                            <h3 data-translate="instruction-5-title">Внесок</h3>
+                            <p data-translate="instruction-5-desc">Зробіть фіксований внесок для участі в турнірі.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="instructions/6.jpg" alt="Instruction 6">
+                        <div class="slide-content">
+                            <h3 data-translate="instruction-6-title">Результати</h3>
+                            <p data-translate="instruction-6-desc">Слідкуйте за результатами матчів та турнірною таблицею.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="instructions/7.jpg" alt="Instruction 7">
+                        <div class="slide-content">
+                            <h3 data-translate="instruction-7-title">Призи</h3>
+                            <p data-translate="instruction-7-desc">Отримуйте винагороди за успішні виступи команди.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="instructions/8.jpg" alt="Instruction 8">
+                        <div class="slide-content">
+                            <h3 data-translate="instruction-8-title">Рейтинг</h3>
+                            <p data-translate="instruction-8-desc">Підніміться в загальному рейтингу гравців.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev">&lt;</button>
+                    <div class="slider-dots"></div>
+                    <button class="slider-btn next">&gt;</button>
+                </div>
+            </div>
+
+            <img src="example/game_history.png" alt="Game History" class="section-title">
+            
+            <div class="game-history glass-effect">
+                <div class="history-content">
+                    <img src="example/about.jpg" alt="Game History">
+                    <div class="history-text">
+                        <h3 data-translate="game-title">Crypto Liga</h3>
+                        <p data-translate="game-description">Crypto Liga - криптогра, симулятор спортивних змагань, з турнірним геймплеєм і змаганням криптокоманд і реальними криптовалютними нагородами.</p>
+                        <p data-translate="game-description-2">Перед початком турніру гравці можуть обрати одну з доступних криптокоманд і зарезервувати її з фіксованим внеском.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page">
+            <div class="contact-content glass-effect">
+                <h2 data-translate="contact-title">Зв'яжіться з нами</h2>
+                <div class="contact-links">
+                    <a href="https://t.me/Rosko_Dorosh" class="contact-link telegram">
+                        <span>Developer</span>
+                    </a>
+                    <a href="https://t.me/Crypto_Liga_Game" class="contact-link telegram-group">
+                        <span>Telegram Group</span>
+                    </a>
+                    <a href="https://github.com/Rosdorosh/Crypto_Liga" class="contact-link whatsapp">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://youtu.be/bW_XHTzIbUA" class="contact-link youtube">
+                        <span>YouTube</span>
+                    </a>
+                    <a href="https://tiktok.com/@your_username" class="contact-link tiktok">
+                        <span>TikTok</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 

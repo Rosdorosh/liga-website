@@ -1,0 +1,52 @@
+# CryptoLiga GitHub Pages Configuration
+
+# Site settings
+title: "CryptoLiga - Офіційний сайт"
+description: "Симулятор спортивних змагань з криптокомандами та реальними нагородами"
+url: "https://yourusername.github.io"
+baseurl: "/cryptoliga"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+
+# Include files
+include:
+  - _pages
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO settings
+lang: uk
+author: CryptoLiga Team
+twitter:
+  username: cryptoliga
+  card: summary_large_image
+
+# Social links
+social:
+  name: CryptoLiga
+  links:
+    - https://t.me/cryptoliga
+    - https://github.com/yourusername/cryptoliga
+
+# Analytics (optional)
+google_analytics: # UA-XXXXXXXXX-X
+
+# Theme settings
+theme: minima 
